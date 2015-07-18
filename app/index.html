@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="AngularUILib">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular UI Library</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <!-- bower:css -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="app.css">
+    <!-- endinject -->
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" ui-view="header"></div>
+    <div class="row" ui-view="main"></div>
+    <div class="row" ui-view="footer"></div>
+</div>
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script src="app.js"></script>
+<!-- endinject -->
+</body>
+</html>
