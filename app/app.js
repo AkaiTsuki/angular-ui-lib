@@ -42,6 +42,28 @@
                             controller: 'DatePickerController'
                         }
                     }
+                })
+                .state('root.directive', {
+                    url: '/directive',
+                    abstract: true
+                })
+                .state('root.directive.first', {
+                    url: '/first-directive',
+                    views: {
+                        'main@': {
+                            templateUrl: 'directive/firstDirective/firstDirective.html',
+                            controller: 'FirstDirectiveController'
+                        }
+                    }
+                })
+                .state('root.directive.table', {
+                    url: '/table',
+                    views: {
+                        'main@': {
+                            templateUrl: 'directive/table/index.html',
+                            controller: 'TestHarnessController'
+                        }
+                    }
                 });
         });
 })();

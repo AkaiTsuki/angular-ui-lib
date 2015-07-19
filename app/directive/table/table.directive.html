@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Customizable Table Directive</div>
+    <div class="panel-body">
+        <p>This table is generate by angular directive, the table header is customizable</p>
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th ng-repeat="th in header">{{th}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in data">
+                <td ng-repeat="cell in row">{{cell}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

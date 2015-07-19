@@ -21,7 +21,7 @@
 
         $scope.clear = function(){
             $scope.dt1 = null;
-        }
+        };
     };
 
     angular
