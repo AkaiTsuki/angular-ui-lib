@@ -1,9 +1,10 @@
-h1.header {
+div.jumbotron{
     background-color: #3498DB;
     color: #fff;
-    height: 75px;
-    padding: 15px 10px 20px 10px;
-    margin: 0px;
+}
+
+div.jumbotron h1 small {
+    color: #eee
 }
 
 div.footer{

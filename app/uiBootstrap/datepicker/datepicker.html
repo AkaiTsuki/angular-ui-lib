@@ -1,0 +1,33 @@
+<h2>Datepicker</h2>
+<div class="row">
+    <div id="basic-use" class="col-md-4">
+        <h4>Basic Use</h4>
+
+        <p>Selected Date: <span>{{dt | date : 'M-d-yyyy'}}</span></p>
+        <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"
+                    custom-class="getDayClass(date, mode)"></datepicker>
+    </div>
+</div>
+
+
+<div id="popup" class="row">
+    <h4 class="col-md-12">Popup</h4>
+
+    <div class="col-md-2">
+        <p class="input-group" ng-class="{'has-error': !dt1}">
+            <input type="text" class="form-control"
+                   datepicker-popup="{{format}}"
+                   ng-model="dt1"
+                   close-text="Close"
+                   is-open="opened"
+                   required/>
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i
+                        class="glyphicon glyphicon-calendar"></i></button>
+                  <button type="button" class="btn btn-danger" ng-click="clear()">
+                      Clear
+                  </button>
+              </span>
+        </p>
+    </div>
+</div>

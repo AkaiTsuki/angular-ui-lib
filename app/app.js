@@ -29,6 +29,19 @@
                             templateUrl: 'home/home.html'
                         }
                     }
+                })
+                .state('root.uibootstrap', {
+                    url: '/uibootstrap',
+                    abstract: true
+                })
+                .state('root.uibootstrap.datepicker', {
+                    url: '/datepicker',
+                    views: {
+                        'main@': {
+                            templateUrl: 'uiBootstrap/datepicker/datepicker.html',
+                            controller: 'DatePickerController'
+                        }
+                    }
                 });
         });
 })();
