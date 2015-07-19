@@ -64,6 +64,15 @@
                             controller: 'TestHarnessController'
                         }
                     }
+                })
+                .state('root.directive.clock', {
+                    url: '/clock',
+                    views: {
+                        'main@': {
+                            templateUrl: 'directive/clock/index.html',
+                            controller: 'TestHarnessController'
+                        }
+                    }
                 });
         });
 })();
