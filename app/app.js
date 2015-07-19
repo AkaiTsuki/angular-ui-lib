@@ -7,6 +7,8 @@
 
     angular
         .module('AngularUILib', ['ngAnimate', 'ui.router', 'ui.bootstrap'])
+
+        // Config for root and home state
         .config(function ($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/home');
 
@@ -29,7 +31,13 @@
                             templateUrl: 'home/home.html'
                         }
                     }
-                })
+                });
+
+        })
+        // Config for Bootstrap component
+        .config(function ($stateProvider) {
+
+            $stateProvider
                 .state('root.uibootstrap', {
                     url: '/uibootstrap',
                     abstract: true
@@ -42,7 +50,12 @@
                             controller: 'DatePickerController'
                         }
                     }
-                })
+                });
+        })
+
+        // config for directive component
+        .config(function ($stateProvider) {
+            $stateProvider
                 .state('root.directive', {
                     url: '/directive',
                     abstract: true
@@ -70,6 +83,15 @@
                     views: {
                         'main@': {
                             templateUrl: 'directive/clock/index.html',
+                            controller: 'TestHarnessController'
+                        }
+                    }
+                })
+                .state('root.directive.dialog', {
+                    url: '/dialog',
+                    views: {
+                        'main@': {
+                            templateUrl: 'directive/dialog/index.html',
                             controller: 'TestHarnessController'
                         }
                     }
