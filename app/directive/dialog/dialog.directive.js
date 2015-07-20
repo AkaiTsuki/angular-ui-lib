@@ -12,7 +12,8 @@
             transclude: true,
             templateUrl: 'directive/dialog/dialog.directive.html',
             scope: {
-                dialogTitle: '='
+                dialogTitle: '=',
+                close: '&onClose'
             }
         };
     };

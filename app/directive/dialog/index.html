@@ -2,13 +2,13 @@
     <small>Wrap arbitrary content</small>
 </h2>
 
-<at-dialog dialog-title="'Dialog with Clock'">
+<at-dialog dialog-title="'Dialog with Clock'" on-close="closeDialog('Closing time dialog',message)">
     <p>Current Time:
         <at-clock format="M-d-yyyy hh:mm:ss a"></at-clock>
     </p>
 </at-dialog>
 
 
-<at-dialog class="alert" dialog-title="'Dialog with Table'">
+<at-dialog class="alert" dialog-title="'Dialog with Table'" on-close="closeDialog('Closing table dialog',message)">
     <at-table data="products" header="['Product Name', 'Price', '# Sold']"></at-table>
 </at-dialog>

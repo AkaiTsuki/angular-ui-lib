@@ -1,4 +1,7 @@
 <div class="alert alert-info">
     <h4>{{dialogTitle}}</h4>
     <div ng-transclude></div>
+    <div>
+        <button class="btn btn-danger" ng-click="close({message: dialogTitle + ' directive INFO: Closed'})">Close</button>
+    </div>
 </div>

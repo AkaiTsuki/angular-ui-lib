@@ -48,6 +48,11 @@
 
         // Fake Table Header for Table Directive
         $scope.header = ['First Name', 'Last Name', 'Street', 'City', 'Zip'];
+
+        $scope.closeDialog = function(message, directiveMsg){
+            console.log(message);
+            console.log(directiveMsg);
+        }
     };
 
     angular.module('AngularUILib')
