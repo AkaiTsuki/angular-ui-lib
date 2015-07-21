@@ -95,6 +95,15 @@
                             controller: 'TestHarnessController'
                         }
                     }
+                })
+                .state('root.directive.drag', {
+                    url: '/drag',
+                    views: {
+                        'main@': {
+                            templateUrl: 'directive/drag/index.html',
+                            controller: 'TestHarnessController'
+                        }
+                    }
                 });
         });
 })();

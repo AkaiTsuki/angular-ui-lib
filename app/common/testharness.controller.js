@@ -52,7 +52,7 @@
         $scope.closeDialog = function(message, directiveMsg){
             console.log(message);
             console.log(directiveMsg);
-        }
+        };
     };
 
     angular.module('AngularUILib')
