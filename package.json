@@ -24,6 +24,7 @@
   "devDependencies": {
     "bower-files": "^3.7.2",
     "gulp-concat": "^2.6.0",
-    "main-bower-files": "^2.9.0"
+    "main-bower-files": "^2.9.0",
+    "protractor": "latest"
   }
 }

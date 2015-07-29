@@ -50,7 +50,7 @@ gulp.task('copy-html-files', ['inject-dev'], function () {
 gulp.task('inject-dev', function () {
     gulp.src('./app/index.html')
         .pipe(inject(gulp.src(bowerFiles(), {read: false}), {name: 'bower', relative: true ,addRootSlash: false}))
-        .pipe(inject(gulp.src(['**/*.js', '**/*.css' , '!bower_components/**'], {
+        .pipe(inject(gulp.src(['**/*.js', '**/*.css' , '!bower_components/**', '!**/*.spec.js'], {
             read: false,
             'cwd': __dirname + '/app/'
         }), {addRootSlash: false}))
